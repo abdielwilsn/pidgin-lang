@@ -1,0 +1,48 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Dependency directories
+vendor/
+
+# Go workspace file
+go.work
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# Build artifacts
+pidgin-lang
+main
+
+# Temporary files
+/tmp/
+*.bak
+*.tmp
+
+# Benchmark results
+*.bench
+cpu.prof
+mem.prof
+
+# Documentation build
+docs/_build/
+
+# VSCode extension package
+.vscode-extension/*.vsix

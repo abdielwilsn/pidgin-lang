@@ -1,0 +1,47 @@
+{
+  "name": "pidgin-lang",
+  "displayName": "Pidgin-Lang",
+  "description": "Syntax highlighting for Pidgin-Lang - Nigerian Pidgin programming language",
+  "version": "0.1.0",
+  "publisher": "abdielwilsn",
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "pidgin",
+    "nigerian",
+    "pidgin-lang",
+    "syntax"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abdielwilsn/pidgin-lang"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "pidgin",
+        "aliases": [
+          "Pidgin",
+          "pidgin-lang"
+        ],
+        "extensions": [
+          ".pdg",
+          ".pidgin"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "pidgin",
+        "scopeName": "source.pidgin",
+        "path": "./syntaxes/pidgin.tmLanguage.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+make i be 1
+
+dey do while i no reach 16 {
+    suppose i be 15 {
+        yarn("FizzBuzz")
+    } abi {
+        suppose i be 3 {
+            yarn("Fizz")
+        } abi {
+            suppose i be 5 {
+                yarn("Buzz")
+            } abi {
+                suppose i be 6 {
+                    yarn("Fizz")
+                } abi {
+                    suppose i be 9 {
+                        yarn("Fizz")
+                    } abi {
+                        suppose i be 10 {
+                            yarn("Buzz")
+                        } abi {
+                            suppose i be 12 {
+                                yarn("Fizz")
+                            } abi {
+                                yarn(i)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    make i be i + 1
+}

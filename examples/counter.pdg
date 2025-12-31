@@ -1,0 +1,9 @@
+make count be 0
+
+dey do while count no reach 5 {
+    yarn("Count: ")
+    yarn(count)
+    make count be count + 1
+}
+
+yarn("Don finish!")

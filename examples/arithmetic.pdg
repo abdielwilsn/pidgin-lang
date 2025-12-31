@@ -1,0 +1,17 @@
+make x be 10
+make y be 5
+
+yarn("Addition: ")
+yarn(x + y)
+
+yarn("Subtraction: ")
+yarn(x - y)
+
+yarn("Multiplication: ")
+yarn(x * y)
+
+yarn("Division: ")
+yarn(x / y)
+
+yarn("Complex: ")
+yarn((x + y) * 2)

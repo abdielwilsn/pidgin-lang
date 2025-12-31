@@ -1,0 +1,78 @@
+// Pidgin-Lang Demo Program
+// Na sample wey dey show wetin Pidgin fit do
+
+// Variables
+make name be "Emeka"
+make age be 25
+
+yarn("=== Welcome to Pidgin-Lang! ===")
+yarn("")
+
+// String concatenation
+yarn("How far, " + name + "!")
+yarn("You get " + age + " years")
+yarn("")
+
+// Conditionals
+yarn("=== Checking your age ===")
+suppose age big pass 18 {
+    yarn("You don old enough!")
+} abi {
+    yarn("You still be pikin")
+}
+yarn("")
+
+// Functions
+yarn("=== Math Operations ===")
+do add(a, b) {
+    bring a + b
+}
+
+do multiply(a, b) {
+    bring a * b
+}
+
+do factorial(n) {
+    suppose n no reach 2 {
+        bring 1
+    } abi {
+        bring n * factorial(n - 1)
+    }
+}
+
+yarn("5 + 3 = " + add(5, 3))
+yarn("4 * 7 = " + multiply(4, 7))
+yarn("5! = " + factorial(5))
+yarn("")
+
+// Loops
+yarn("=== Counting ===")
+make i be 1
+dey do while i no reach 6 {
+    yarn("Number " + i)
+    make i be i + 1
+}
+yarn("")
+
+// FizzBuzz in Pidgin!
+yarn("=== FizzBuzz (1-15) ===")
+make num be 1
+dey do while num no reach 16 {
+    suppose (num / 15) * 15 be num {
+        yarn("FizzBuzz")
+    } abi {
+        suppose (num / 3) * 3 be num {
+            yarn("Fizz")
+        } abi {
+            suppose (num / 5) * 5 be num {
+                yarn("Buzz")
+            } abi {
+                yarn(num)
+            }
+        }
+    }
+    make num be num + 1
+}
+
+yarn("")
+yarn("=== Program don finish! ===")

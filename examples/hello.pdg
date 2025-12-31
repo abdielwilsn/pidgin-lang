@@ -1,0 +1,6 @@
+make name be "Chidi"
+yarn("How far, " + name + "!")
+
+suppose name be "Chidi" {
+    yarn("Na correct guy!")
+}
