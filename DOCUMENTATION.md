@@ -51,11 +51,13 @@ yarn("How far, " + name + "!")
 ```
 
 Run it:
+
 ```bash
 ./pidgin hello.pdg
 ```
 
 Output:
+
 ```
 How far, Chidi!
 ```
@@ -85,6 +87,7 @@ make message be "Wetin dey happen?"
 ```
 
 **String Concatenation:**
+
 ```pidgin
 make fullName be "Ade" + " " + "Johnson"
 make info be "Age: " + 25  // Automatic type conversion
@@ -100,6 +103,7 @@ make hasPermission be lie
 ```
 
 **Truthy and Falsy:**
+
 - **Falsy values:** `lie`, `nothing`
 - **Truthy values:** Everything else (numbers, strings, functions, `tru`)
 
@@ -167,13 +171,13 @@ yarn(outer())  // Prints 30
 
 ### Arithmetic Operators
 
-| Operator | Description | Example |
-|----------|-------------|---------|
-| `+` | Addition | `5 + 3` → `8` |
-| `-` | Subtraction | `10 - 2` → `8` |
-| `*` | Multiplication | `4 * 5` → `20` |
-| `/` | Division | `20 / 4` → `5` |
-| `-x` | Negation | `-5` → `-5` |
+| Operator | Description    | Example        |
+| -------- | -------------- | -------------- |
+| `+`      | Addition       | `5 + 3` → `8`  |
+| `-`      | Subtraction    | `10 - 2` → `8` |
+| `*`      | Multiplication | `4 * 5` → `20` |
+| `/`      | Division       | `20 / 4` → `5` |
+| `-x`     | Negation       | `-5` → `-5`    |
 
 **Note:** Division by zero throws an error: "Omo! You no fit divide by zero o!"
 
@@ -185,14 +189,14 @@ make result be (10 + 5) / 3
 
 ### Comparison Operators
 
-| Operator | Description | Example |
-|----------|-------------|---------|
-| `be` or `na` | Equals | `5 be 5` → `tru` |
-| `no be` | Not equals | `5 no be 3` → `tru` |
-| `big pass` | Greater than | `10 big pass 5` → `tru` |
-| `no reach` | Less than | `3 no reach 10` → `tru` |
-| `>` | Greater than (alt) | `10 > 5` → `tru` |
-| `<` | Less than (alt) | `3 < 10` → `tru` |
+| Operator     | Description        | Example                 |
+| ------------ | ------------------ | ----------------------- |
+| `be` or `na` | Equals             | `5 be 5` → `tru`        |
+| `no be`      | Not equals         | `5 no be 3` → `tru`     |
+| `big pass`   | Greater than       | `10 big pass 5` → `tru` |
+| `no reach`   | Less than          | `3 no reach 10` → `tru` |
+| `>`          | Greater than (alt) | `10 > 5` → `tru`        |
+| `<`          | Less than (alt)    | `3 < 10` → `tru`        |
 
 ```pidgin
 suppose age big pass 18 {
@@ -206,11 +210,11 @@ suppose name be "Chidi" {
 
 ### Logical Operators
 
-| Operator | Description | Example |
-|----------|-------------|---------|
-| `!` | Logical NOT | `!tru` → `lie` |
-| `no be` | Logical NOT | `no be tru` → `lie` |
-| `and` | Logical AND | `tru and tru` → `tru` |
+| Operator | Description | Example               |
+| -------- | ----------- | --------------------- |
+| `!`      | Logical NOT | `!tru` → `lie`        |
+| `no be`  | Logical NOT | `no be tru` → `lie`   |
+| `and`    | Logical AND | `tru and tru` → `tru` |
 
 ```pidgin
 suppose age big pass 18 and hasID be tru {
@@ -245,6 +249,7 @@ make result be (5 + 3) * 2  // 16, not 11
 The `suppose` statement is like `if`, and `abi` is like `else`.
 
 **Basic syntax:**
+
 ```pidgin
 suppose condition {
     // code if condition is true
@@ -252,6 +257,7 @@ suppose condition {
 ```
 
 **With else clause:**
+
 ```pidgin
 suppose condition {
     // code if condition is true
@@ -273,6 +279,7 @@ suppose age big pass 18 {
 ```
 
 **Nested conditions:**
+
 ```pidgin
 make score be 85
 
@@ -296,6 +303,7 @@ suppose score big pass 90 {
 The `dey do while` construct creates a while loop.
 
 **Basic syntax:**
+
 ```pidgin
 dey do while condition {
     // code that repeats
@@ -305,6 +313,7 @@ dey do while condition {
 **Examples:**
 
 **Counting:**
+
 ```pidgin
 make i be 0
 
@@ -317,6 +326,7 @@ dey do while i no reach 5 {
 ```
 
 **Countdown:**
+
 ```pidgin
 make count be 10
 
@@ -329,6 +339,7 @@ yarn("Blast off!")
 ```
 
 **Complex conditions:**
+
 ```pidgin
 make x be 15
 
@@ -347,6 +358,7 @@ dey do while (x / 3) * 3 be x {
 Functions are defined with the `do` keyword.
 
 **Named function:**
+
 ```pidgin
 do functionName(param1, param2) {
     // function body
@@ -355,6 +367,7 @@ do functionName(param1, param2) {
 ```
 
 **Anonymous function:**
+
 ```pidgin
 do(param1, param2) {
     bring returnValue
@@ -476,6 +489,7 @@ yarn("Age:", 25, "Name:", "Chidi")
 ```
 
 **Features:**
+
 - Accepts multiple arguments
 - Automatically converts values to strings
 - Returns `nothing`
@@ -506,6 +520,7 @@ yarn(type(do(x){bring x}))  // "FUNCTION"
 ```
 
 **Use cases:**
+
 - Debugging
 - Type validation
 - Conditional logic based on types
@@ -528,26 +543,26 @@ make x be 5  // This is also a comment
 
 ## Keywords Reference
 
-| Keyword | Purpose | Example |
-|---------|---------|---------|
-| `make` | Variable declaration | `make x be 5` |
-| `be` | Assignment/equality | `x be 5` or `5 be 5` |
-| `na` | Alternative to `be` | `make x na 5` |
-| `suppose` | If statement | `suppose x big pass 5 { ... }` |
-| `abi` | Else statement | `abi { ... }` |
-| `dey` | Loop start | `dey do while ...` |
-| `do` | Function/loop keyword | `do func(x) { ... }` |
-| `while` | While loop part | `dey do while condition` |
-| `bring` | Return statement | `bring value` |
-| `yarn` | Print function | `yarn("text")` |
-| `tru` | Boolean true | `tru` |
-| `lie` | Boolean false | `lie` |
-| `nothing` | Null/None value | `nothing` |
-| `and` | Logical AND | `a and b` |
-| `no` | Negation prefix | `no be x` |
-| `big` | Greater than (part 1) | `a big pass b` |
-| `pass` | Greater than (part 2) | `a big pass b` |
-| `reach` | Less than (part) | `a no reach b` |
+| Keyword   | Purpose               | Example                        |
+| --------- | --------------------- | ------------------------------ |
+| `make`    | Variable declaration  | `make x be 5`                  |
+| `be`      | Assignment/equality   | `x be 5` or `5 be 5`           |
+| `na`      | Alternative to `be`   | `make x na 5`                  |
+| `suppose` | If statement          | `suppose x big pass 5 { ... }` |
+| `abi`     | Else statement        | `abi { ... }`                  |
+| `dey`     | Loop start            | `dey do while ...`             |
+| `do`      | Function/loop keyword | `do func(x) { ... }`           |
+| `while`   | While loop part       | `dey do while condition`       |
+| `bring`   | Return statement      | `bring value`                  |
+| `yarn`    | Print function        | `yarn("text")`                 |
+| `tru`     | Boolean true          | `tru`                          |
+| `lie`     | Boolean false         | `lie`                          |
+| `nothing` | Null/None value       | `nothing`                      |
+| `and`     | Logical AND           | `a and b`                      |
+| `no`      | Negation prefix       | `no be x`                      |
+| `big`     | Greater than (part 1) | `a big pass b`                 |
+| `pass`    | Greater than (part 2) | `a big pass b`                 |
+| `reach`   | Less than (part)      | `a no reach b`                 |
 
 ---
 
@@ -728,11 +743,13 @@ Pidgin provides helpful error messages in Pidgin English:
 ### Interactive REPL
 
 Start the REPL:
+
 ```bash
 ./pidgin
 ```
 
 Type expressions and statements interactively:
+
 ```
 >>> make x be 10
 >>> yarn(x * 2)
@@ -750,6 +767,7 @@ Pidgin has two execution engines:
 2. **Tree-walking Interpreter** - Legacy mode
 
 To use the interpreter instead of VM:
+
 ```bash
 ./pidgin --vm=false yourfile.pdg
 ```
@@ -759,6 +777,7 @@ To use the interpreter instead of VM:
 ## Language Philosophy
 
 Pidgin is designed to:
+
 - Make programming accessible using Nigerian Pidgin English
 - Provide familiar syntax for West African developers
 - Support functional programming with closures and first-class functions
@@ -769,6 +788,7 @@ Pidgin is designed to:
 ## Future Features
 
 Planned features (not yet implemented):
+
 - Arrays/Lists
 - Hash tables/Dictionaries
 - Break and continue statements
@@ -781,6 +801,7 @@ Planned features (not yet implemented):
 ## Contributing
 
 Contributions are welcome! Visit the GitHub repository to:
+
 - Report bugs
 - Suggest features
 - Submit pull requests
@@ -796,7 +817,7 @@ See the LICENSE file in the repository.
 
 ## Learn More
 
-- **Repository:** [https://github.com/yourusername/pidgin-lang](https://github.com/yourusername/pidgin-lang)
+- **Repository:** [https://github.com/abdielwilsn/pidgin-lang](https://github.com/abdielwilsn/pidgin-lang)
 - **Website:** [https://pidgin-lang.org](https://pidgin-lang.org)
 - **Examples:** See [demo.pdg](demo.pdg) for more code samples
 
