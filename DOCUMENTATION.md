@@ -28,7 +28,7 @@ Pidgin is a programming language with Nigerian Pidgin English syntax, making cod
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/pidgin-lang
+git clone https://github.com/abdielwilsn/pidgin-lang
 cd pidgin-lang
 
 # Build the interpreter
