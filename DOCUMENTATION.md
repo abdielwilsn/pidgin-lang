@@ -1,7 +1,7 @@
 # Pidgin Programming Language Documentation
 
 **Version:** 0.1.0
-**Official Website:** [pidgin-lang.org](https://pidgin-lang.org)
+<!-- **Official Website:** [pidgin-lang.org](https://pidgin-lang.org) -->
 
 Pidgin is a programming language with Nigerian Pidgin English syntax, making coding accessible and fun using familiar West African expressions.
 
@@ -818,7 +818,7 @@ See the LICENSE file in the repository.
 ## Learn More
 
 - **Repository:** [https://github.com/abdielwilsn/pidgin-lang](https://github.com/abdielwilsn/pidgin-lang)
-- **Website:** [https://pidgin-lang.org](https://pidgin-lang.org)
+<!-- - **Website:** [https://pidgin-lang.org](https://pidgin-lang.org) -->
 - **Examples:** See [demo.pdg](demo.pdg) for more code samples
 
 ---
