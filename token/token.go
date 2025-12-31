@@ -15,28 +15,28 @@ const (
 
 	// Identifiers and literals
 	IDENT  TokenType = "IDENT"  // User-defined names: variables, functions (e.g., money, calculateSalary)
-	INT    TokenType = "INT"    // Integer literals (e.g., 42, 1000)
-	STRING TokenType = "STRING" // String literals (e.g., "How you dey?", 'Wetin dey happen?')
+	INT    TokenType = "INT"    // Integer literals 
+	STRING TokenType = "STRING" // String literals
 
 	// Operators
-	ASSIGN   TokenType = "="   // =  (assignment)
-	PLUS     TokenType = "+"        // +  (addition or string concatenation)
-	MINUS    TokenType = "-"        // -  (subtraction)
-	BANG     TokenType = "!"        // !  (bang / not)
-	ASTERISK TokenType = "*"        // *  (multiplication)
-	SLASH    TokenType = "/"        // /  (division)
+	ASSIGN   TokenType = "="   
+	PLUS     TokenType = "+"         
+	MINUS    TokenType = "-"         
+	BANG     TokenType = "!"         
+	ASTERISK TokenType = "*"         
+	SLASH    TokenType = "/"       
 
 	// Comparison (single character)
 	LT TokenType = "<" // <  (less than)
 	GT TokenType = ">" // >  (greater than)
 
 	// Delimiters
-	COMMA     TokenType = "," // ,  (separator in arguments, lists)
-	SEMICOLON TokenType = ";" // ;  (optional statement terminator)
-	LPAREN    TokenType = "(" // (  (left parenthesis – grouping, function calls)
-	RPAREN    TokenType = ")" // )  (right parenthesis)
-	LBRACE    TokenType = "{" // {  (start of block – functions, conditionals, loops)
-	RBRACE    TokenType = "}" // }  (end of block)
+	COMMA     TokenType = "," 
+	SEMICOLON TokenType = ";" 
+	LPAREN    TokenType = "(" 
+	RPAREN    TokenType = ")" 
+	LBRACE    TokenType = "{" 
+	RBRACE    TokenType = "}" 
 
 	// Keywords (Pidgin-flavored control flow and declarations)
 	MAKE      TokenType = "MAKE"      // make – variable declaration (e.g., make name = "John")
@@ -80,8 +80,6 @@ var keywords = map[string]TokenType{
 	"reach":   REACH,
 }
 
-// LookupIdent checks if an identifier is a keyword and returns the corresponding TokenType.
-// If not found in the map, it returns IDENT.
 func LookupIdent(ident string) TokenType {
 	if tok, ok := keywords[ident]; ok {
 		return tok
